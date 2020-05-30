@@ -1,0 +1,236 @@
+
+/** BOX SIZING RESET FOR ALL ELEMENTS **/
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+
+
+/**** GLOBAL STYLES ****/
+body {
+  background-color: #dadada;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+div {
+  display: block;
+  background-color: #FFFFFF;
+  width: 100%;
+  box-shadow: 150px;
+  box-shadow: 0px -3px 1px #DDDDDD;
+}
+
+
+
+/**** HEADERS ****/
+
+/* Screen Title */
+h1 {
+  font-size: 280%;
+  display: inline-block;
+  text-align: center;
+  margin: 4% 25% 4%;
+  position: relative;
+  top: -3px;
+}
+
+/* Station Name & Arrow Label */
+h2 {
+  display: block;
+  font-size: 295%;
+  font-weight: bold;
+  margin: 0% 4% 2%;
+}
+
+/* Bus Station Info */
+h3 {
+  display: inline-block;
+  font-size: 270%;
+  margin-left: 4%;
+  padding: 0%;
+}
+
+/* Title of Bus Lines */
+h4 {
+  display: inline-block;
+  font-size: 260%;
+  margin: 2% 2%;
+  font-weight: bold;
+}
+
+
+
+/**** NAVIGATION BAR ****/
+
+/* Back Arrow */
+.fa-chevron-left {
+  display: inline-block;
+  margin: 4% .5% 4% 2%;
+  color: #FF6600;
+}
+
+.arrow-text {
+  display: inline-block;
+  color: #FF6600;
+  font-size: 260%;
+  font-weight: normal;
+  margin: 0%;
+  position: relative;
+  top: -9px;
+}
+
+/* Map */
+.map {
+  overflow: hidden;
+  width: 980px;
+  height: 1069px;
+
+}
+
+img {
+  width: 100%;
+}
+
+
+
+/**** BUS STATION ****/
+.bus-station {
+  box-shadow: 0px -3px 15px #DDDDDD;
+  border-radius: 30px;
+  position: relative;
+  top: -30px;
+  height: 2400px;
+}
+
+.drag-bar {
+  position: relative;
+  right: -430px;
+  top: -20px;
+  margin: 1px;
+}
+
+.close {
+  position: relative;
+  right: -770px;
+  bottom: -40px;
+}
+.ETA-of-next-bus {
+  color: #00A307;
+  margin-left: 1%;
+}
+
+/* Schedule */
+.bus-line-grouping { /*Eastbound, Northbound, etc.*/
+  border-bottom: 2px;
+  border-color: #DDDDDD;
+  border-style: solid;
+  width: 100%;
+  margin-top: 6%;
+  padding: 2%;
+  box-shadow: none;
+}
+
+.bus-line {
+  display: block;
+  width: auto;
+  font-size: 260%;
+  border-bottom: 2px;
+  border-color: #DDDDDD;
+  border-style: solid;
+  padding: 2.5% 2.5%;
+  margin-left: 5%;
+  box-shadow: none;
+}
+
+.line {
+  display: inline-block;
+  width: 10%;
+  position: relative;
+  bottom: -18px;
+}
+
+.name {
+  display: inline-block;
+  width: 57%;
+  position: relative;
+  bottom: -18px;
+}
+
+.time {
+  display: inline-block;
+  text-align: right;
+  width: 20%;
+}
+
+/* 2 min */
+.time.ETA {
+  color: #00A307;
+  text-align: right;
+}
+
+.frequency {
+  display: inline-block;
+  color: #7a7a7a;
+  width: 90%;
+  text-align: right;
+  font-size: 85%;
+}
+
+.bi-arrow-repeat { /* frequency icon */
+  display: inline;
+  color: #7a7a7a;
+  position: relative;
+  left: -168px;
+  bottom: -52px;
+}
+
+.fa-chevron-right {
+  color: #DDDDDD;
+  position: relative;
+  right: -26px;
+  top: -18px;
+}
+
+
+/* REROUTED & OUT OF SERVICE */
+
+.rerouted h4 {
+  width: 50%;
+  position: relative;
+  right: -18px;
+}
+
+.N-A {
+  display: inline;
+  color: #7a7a7a;
+  position: relative;
+  left: -122px;
+  bottom: -51px;
+}
+
+.out-of-service h4 {
+  width: 50%;
+  position: relative;
+  right: -18px;
+}
+
+.out-of-service-gray {
+  bottom: 22px;
+  color: #9c9c9c;
+}
+
+.fa-random { /* rerouted icon */
+  color: #FFB41F;
+  position: relative;
+  bottom: -4px;
+  margin-left: 4%;
+}
+
+.fa-exclamation-triangle { /* out of service icon */
+  color: #C5283D;
+  position: relative;
+  bottom: -4px;
+  margin-left: 4%;
+}
